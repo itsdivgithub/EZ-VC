@@ -106,6 +106,12 @@ header p {
     padding-left: 10px;
 }
 
+
+/* VC Item (for each VC method) */
+.vc-item {
+    margin-bottom: 15px;
+}
+
 .leading-vc h4,
 .proposed-vc h4 {
     margin-top: 5px;
@@ -118,15 +124,15 @@ header p {
 .leading-vc audio,
 .proposed-vc audio {
     width: 100%;
-    max-width: 200px;
-    margin-bottom: 10px; /* Add spacing below audio player */
+    max-width: 180px;
+    margin-bottom: 5px;
 }
 
 /* Basic Audio Player Styling */
 audio::-webkit-media-controls-enclosure {
     background-color: #f0f0f0;
     border-radius: 5px;
-    padding: 5px;
+    padding: 3px;
 }
 
 audio::-webkit-media-controls-panel {
