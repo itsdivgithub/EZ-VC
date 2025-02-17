@@ -94,6 +94,7 @@ header p {
 .proposed-vc {
      width: 30%;
     margin-bottom: 10px;
+    margin-left: 10px; /* Add margin to create space */
 }
 
 .leading-vc h3,
@@ -132,5 +133,8 @@ audio::-webkit-media-controls-enclosure {
     /* Stack VC approaches on smaller screens */
     .vc-approaches {
         flex-direction: column;
+    }
+      .proposed-vc {
+        margin-left: 0; /* Remove margin on smaller screens */
     }
 }
