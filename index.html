@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EZ-VC Audio Showcase</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Ensure this path is correct -->
+    <link rel="stylesheet" href="styles.css"> <!-- Ensuring CSS file is correctly linked -->
 </head>
 <body>
 
@@ -17,55 +17,59 @@
     <!-- Main Content -->
     <div class="container">
 
-        <!-- Row 1 -->
-        <div class="audio-row">
-            <div class="column">
-                <h3>Source Utterance</h3>
-                <audio controls>
-                    <source src="audio/source1.wav" type="audio/wav">
-                </audio>
+        <!-- Loop to create 10 rows -->
+        <div class="audio-container">
+            <!-- Row 1 (Repeat similar structure for more rows) -->
+            <div class="audio-row">
+                <div class="column">
+                    <h3>Source Utterance</h3>
+                    <audio controls>
+                        <source src="audio/source1.wav" type="audio/wav">
+                    </audio>
+                </div>
+
+                <div class="column">
+                    <h3>Target Prompt</h3>
+                    <audio controls>
+                        <source src="audio/target1.wav" type="audio/wav">
+                    </audio>
+                </div>
+
+                <div class="column">
+                    <h3>Leading VC Approaches</h3>
+                    <p>Seed VC</p>
+                    <audio controls>
+                        <source src="audio/seed1.wav" type="audio/wav">
+                    </audio>
+
+                    <p>KNN VC</p>
+                    <audio controls>
+                        <source src="audio/knn1.wav" type="audio/wav">
+                    </audio>
+
+                    <p>Vec2Wav2 VC</p>
+                    <audio controls>
+                        <source src="audio/vec2wav1.wav" type="audio/wav">
+                    </audio>
+
+                    <p>Diff-Hier VC</p>
+                    <audio controls>
+                        <source src="audio/diffhier1.wav" type="audio/wav">
+                    </audio>
+                </div>
+
+                <div class="column">
+                    <h3>EZ-VC</h3>
+                    <audio controls>
+                        <source src="audio/ezvc1.wav" type="audio/wav">
+                    </audio>
+                </div>
             </div>
 
-            <div class="column">
-                <h3>Target Prompt</h3>
-                <audio controls>
-                    <source src="audio/target1.wav" type="audio/wav">
-                </audio>
-            </div>
-
-            <div class="column">
-                <h3>Leading VC Approaches</h3>
-                <p>Seed VC</p>
-                <audio controls>
-                    <source src="audio/seed1.wav" type="audio/wav">
-                </audio>
-
-                <p>KNN VC</p>
-                <audio controls>
-                    <source src="audio/knn1.wav" type="audio/wav">
-                </audio>
-
-                <p>Vec2Wav2 VC</p>
-                <audio controls>
-                    <source src="audio/vec2wav1.wav" type="audio/wav">
-                </audio>
-
-                <p>Diff-Hier VC</p>
-                <audio controls>
-                    <source src="audio/diffhier1.wav" type="audio/wav">
-                </audio>
-            </div>
-
-            <div class="column">
-                <h3>EZ-VC</h3>
-                <audio controls>
-                    <source src="audio/ezvc1.wav" type="audio/wav">
-                </audio>
-            </div>
+            <!-- Duplicate the above "audio-row" div 9 more times to make 10 rows -->
+            
         </div>
 
-        <!-- Copy the row structure above for more rows -->
-        
     </div>
 
 </body>
