@@ -85,25 +85,25 @@ header p {
 .vc-approaches {
     flex: 2; /* Make the column wider */
     display: flex;
-
+    /*flex-direction: column;   Stack Leading and Proposed */
 }
 
-.leading-vc {
-    width: 50%; /* Reduced Width */
-    padding-right: 10px; /* Added Padding */
+.leading-vc{
+     width: 70%;
+      padding-right: 10px; /* Add padding between leading and proposed */
 }
-
 .proposed-vc {
-    width: 50%; /* Reduced Width */
-    padding-left: 10px; /* Added Padding */
+     width: 30%;
+    margin-bottom: 10px;
+    /*margin-left: 10px;  Add margin to create space */
+        padding-left: 10px; /* Add padding between leading and proposed */
 }
 
 .leading-vc h3,
 .proposed-vc h3 {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #2980b9;
-    font-size: 1.2em; /* Smaller Heading */
 }
 
 .leading-vc h4,
@@ -111,14 +111,14 @@ header p {
     margin-top: 5px;
     margin-bottom: 5px;
     font-weight: normal;
-    font-size: 0.9em; /* Smaller Heading */
+     width: 100%; /* Reduce width of heading */
+          font-size: 0.9em; /* Reduce font size of heading */
 }
 
 .leading-vc audio,
 .proposed-vc audio {
-    width: 100%; /* Audio Player Width */
-    max-width: 200px; /* Maximum Audio Player Width */
-    margin-bottom: 5px; /* Spacing Below Audio */
+    width: 100%; /* Reduce width of audio player */
+        max-width: 200px; /* Limit the maximum width */
 }
 
 audio {
@@ -136,7 +136,6 @@ audio::-webkit-media-controls-enclosure {
     .audio-row {
         flex-direction: column;
     }
-
     .audio-column {
         min-width: auto;
     }
@@ -144,11 +143,12 @@ audio::-webkit-media-controls-enclosure {
     /* Stack VC approaches on smaller screens */
     .vc-approaches {
         flex-direction: column;
+                 padding: 0; /* Remove padding on smaller screens */
     }
-
     .leading-vc,
     .proposed-vc {
-        width: 100%; /* Full Width on Mobile */
-        padding: 0; /* Remove Padding on Mobile */
+        width: 100%; /* Full width on smaller screens */
+        padding: 0; /* Remove padding on smaller screens */
+        margin: 0; /* Remove margin on smaller screens */
     }
 }
