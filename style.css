@@ -109,6 +109,12 @@ header p {
     margin-top: 5px;
     margin-bottom: 5px;
     font-weight: normal;
+     width: 90%; /* Reduce width of heading */
+}
+
+.leading-vc audio,
+.proposed-vc audio {
+    width: 90%; /* Reduce width of audio player */
 }
 
 audio {
