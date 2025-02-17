@@ -80,7 +80,7 @@ header p {
 .audio-column {
     flex: 1;
     padding: 10px;
-    min-width: 200px;
+    min-width: 150px; /* Adjusted min-width */
 }
 
 .audio-column h3 {
@@ -119,44 +119,25 @@ header p {
     font-size: 1em;
 }
 
-/* Audio Player */
-.leading-vc audio,
-.proposed-vc audio {
+/* ALL Audio Players - Consistent Size */
+audio {
     width: 100%;
-    max-width: 180px;
+    max-width: 150px; /* Medium, consistent size */
     margin-bottom: 5px;
-    border-radius: 20px; /* Rounded corners for the audio player */
-    overflow: hidden; /* Ensure the rounded corners are visible */
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 /* Basic Audio Player Styling */
 audio::-webkit-media-controls-enclosure {
     background-color: #f0f0f0;
-    border-radius: 20px; /* Rounded corners for the controls */
+    border-radius: 20px;
     padding: 3px;
 }
 
 audio::-webkit-media-controls-panel {
     background-color: #f0f0f0;
 }
-
-/* Hide some default controls (very limited) */
-audio::-webkit-media-controls-play-button {
-    /* display: none;  Hides the play button */
-}
-
-audio::-webkit-media-controls-current-time-display {
-    font-size: 0.7em;
-}
-
-audio::-webkit-media-controls-time-remaining-display {
-    font-size: 0.7em;
-}
-
-audio::-webkit-media-controls-mute-button {
-    /* display: none;  Hides the mute button */
-}
-
 
 /* Responsive */
 @media (max-width: 768px) {
