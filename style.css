@@ -24,9 +24,10 @@ p {
     margin: 5px 0 20px;
 }
 
-/* Main Content */
+/* Main Container */
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 20px auto;
     background: white;
     padding: 20px;
@@ -34,36 +35,50 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Audio Row */
+/* Audio Row: FLEXBOX for Horizontal Alignment */
 .audio-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Ensures responsiveness */
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
 }
 
+/* Each Column */
 .column {
-    flex: 1;
+    flex: 1;  /* Ensures equal width */
+    min-width: 250px;
+    padding: 10px;
     text-align: center;
-    padding: 0 10px;
 }
 
-/* Audio Player */
+/* Ensuring Audio Players Align Nicely */
 audio {
     width: 100%;
     max-width: 250px;
+    margin: 5px 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Mobile & Tablet Responsiveness */
+@media (max-width: 992px) {
     .audio-row {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap; /* Allow columns to wrap */
     }
 
     .column {
-        width: 100%;
-        margin-bottom: 15px;
+        flex: 50%;  /* Two columns per row */
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .audio-row {
+        flex-direction: column; /* Stack on smaller screens */
+    }
+
+    .column {
+        flex: 100%; /* Full width per row */
+        text-align: center;
     }
 }
