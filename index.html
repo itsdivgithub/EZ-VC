@@ -3,65 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EZ-VC Showcase</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>EZ-VC Audio Showcase</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure this path is correct -->
 </head>
 <body>
 
+    <!-- Header Section -->
     <header>
         <h1>Welcome to EZ-VC</h1>
-        <p>Easy Multilingual Voice Conversion.</p>
+        <p>Easy Multilingual Voice Conversion</p>
     </header>
 
-    <main>
-        <!-- Audio rows (10 times for different files) -->
-        <div class="container">
-            <!-- Repeat this block 10 times -->
-            <div class="audio-row">
-                <div class="column">
-                    <h3>Source Utterance</h3>
-                    <audio controls>
-                        <source src="audio/source1.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <div class="column">
-                    <h3>Target Prompt</h3>
-                    <audio controls>
-                        <source src="audio/target1.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <div class="column">
-                    <h3>Leading VC Approaches</h3>
-                    <p>Seed VC</p>
-                    <audio controls>
-                        <source src="audio/seed_vc1.wav" type="audio/wav">
-                    </audio>
-                    <p>KNN VC</p>
-                    <audio controls>
-                        <source src="audio/knn_vc1.wav" type="audio/wav">
-                    </audio>
-                    <p>Vec2Wav2 VC</p>
-                    <audio controls>
-                        <source src="audio/vec2wav2_vc1.wav" type="audio/wav">
-                    </audio>
-                    <p>Diff-Hier VC</p>
-                    <audio controls>
-                        <source src="audio/diff_hier_vc1.wav" type="audio/wav">
-                    </audio>
-                </div>
-                <div class="column">
-                    <h3>EZ-VC</h3>
-                    <audio controls>
-                        <source src="audio/ez_vc1.wav" type="audio/wav">
-                    </audio>
-                </div>
-            </div>
-            <!-- Repeat similar structure for 10 rows -->
-        </div>
-    </main>
+    <!-- Main Content -->
+    <div class="container">
 
-    <script src="script.js"></script>
+        <!-- Row 1 -->
+        <div class="audio-row">
+            <div class="column">
+                <h3>Source Utterance</h3>
+                <audio controls>
+                    <source src="audio/source1.wav" type="audio/wav">
+                </audio>
+            </div>
+
+            <div class="column">
+                <h3>Target Prompt</h3>
+                <audio controls>
+                    <source src="audio/target1.wav" type="audio/wav">
+                </audio>
+            </div>
+
+            <div class="column">
+                <h3>Leading VC Approaches</h3>
+                <p>Seed VC</p>
+                <audio controls>
+                    <source src="audio/seed1.wav" type="audio/wav">
+                </audio>
+
+                <p>KNN VC</p>
+                <audio controls>
+                    <source src="audio/knn1.wav" type="audio/wav">
+                </audio>
+
+                <p>Vec2Wav2 VC</p>
+                <audio controls>
+                    <source src="audio/vec2wav1.wav" type="audio/wav">
+                </audio>
+
+                <p>Diff-Hier VC</p>
+                <audio controls>
+                    <source src="audio/diffhier1.wav" type="audio/wav">
+                </audio>
+            </div>
+
+            <div class="column">
+                <h3>EZ-VC</h3>
+                <audio controls>
+                    <source src="audio/ezvc1.wav" type="audio/wav">
+                </audio>
+            </div>
+        </div>
+
+        <!-- Copy the row structure above for more rows -->
+        
+    </div>
+
 </body>
 </html>
