@@ -1,52 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Gallery</title>
+    <title>EZ-VC Audio Showcase</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
-        <h1>Welcome to the EZ-VC</h1>
+        <h1>Welcome to EZ-VC</h1>
         <p>Easy Multilingual Voice Conversion.</p>
     </header>
-
     <main>
-        <section class="audio-category">
-            <h2>Category 1</h2>
-            <audio controls>
-                <source src="audio1.wav" type="audio/wav">
-            </audio>
-            <audio controls>
-                <source src="audio2.wav" type="audio/wav">
-            </audio>
-        </section>
-
-        <section class="audio-category">
-            <h2>Category 2</h2>
-            <audio controls>
-                <source src="audio3.wav" type="audio/wav">
-            </audio>
-            <audio controls>
-                <source src="audio4.wav" type="audio/wav">
-            </audio>
-        </section>
-
-        <section class="audio-category">
-            <h2>Category 3</h2>
-            <audio controls>
-                <source src="audio5.wav" type="audio/wav">
-            </audio>
-            <audio controls>
-                <source src="audio6.wav" type="audio/wav">
-            </audio>
-        </section>
+        <div class="audio-table">
+            <!-- Generate 10 rows dynamically -->
+            <!-- Each row follows the given structure -->
+            <div class="audio-row">
+                <div class="audio-column">
+                    <h3>Source Utterance</h3>
+                    <audio controls>
+                        <source src="audio/source1.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="audio-column">
+                    <h3>Target Prompt</h3>
+                    <audio controls>
+                        <source src="audio/target1.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="audio-column">
+                    <h3>Leading VC Approaches</h3>
+                    <p>Seed VC</p>
+                    <audio controls>
+                        <source src="audio/seed1.wav" type="audio/wav">
+                    </audio>
+                    <p>KNN VC</p>
+                    <audio controls>
+                        <source src="audio/knn1.wav" type="audio/wav">
+                    </audio>
+                    <p>Vec2Wav2 VC</p>
+                    <audio controls>
+                        <source src="audio/vec2wav1.wav" type="audio/wav">
+                    </audio>
+                    <p>Diff-Hier VC</p>
+                    <audio controls>
+                        <source src="audio/diffhier1.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="audio-column">
+                    <h3>EZ-VC</h3>
+                    <audio controls>
+                        <source src="audio/ezvc1.wav" type="audio/wav">
+                    </audio>
+                </div>
+            </div>
+            
+            <!-- Repeat the above row structure 9 more times with different audio files -->
+            
+            <!-- Example: Second Row -->
+            <div class="audio-row">
+                <div class="audio-column">
+                    <h3>Source Utterance</h3>
+                    <audio controls>
+                        <source src="audio/source2.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="audio-column">
+                    <h3>Target Prompt</h3>
+                    <audio controls>
+                        <source src="audio/target2.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="audio-column">
+                    <h3>Leading VC Approaches</h3>
+                    <p>Seed VC</p>
+                    <audio controls>
+                        <source src="audio/seed2.wav" type="audio/wav">
+                    </audio>
+                    <p>KNN VC</p>
+                    <audio controls>
+                        <source src="audio/knn2.wav" type="audio/wav">
+                    </audio>
+                    <p>Vec2Wav2 VC</p>
+                    <audio controls>
+                        <source src="audio/vec2wav2.wav" type="audio/wav">
+                    </audio>
+                    <p>Diff-Hier VC</p>
+                    <audio controls>
+                        <source src="audio/diffhier2.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="audio-column">
+                    <h3>EZ-VC</h3>
+                    <audio controls>
+                        <source src="audio/ezvc2.wav" type="audio/wav">
+                    </audio>
+                </div>
+            </div>
+            
+            <!-- Repeat similar structure for rows 3-10 -->
+        </div>
     </main>
-
-    <script src="script.js"></script>
 </body>
-
 </html>
