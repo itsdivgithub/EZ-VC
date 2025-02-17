@@ -80,7 +80,7 @@ header p {
 .audio-column {
     flex: 1;
     padding: 10px;
-    min-width: 150px; /* Adjusted min-width */
+    min-width: 200px;
 }
 
 .audio-column h3 {
@@ -109,6 +109,7 @@ header p {
 /* VC Item (for each VC method) */
 .vc-item {
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .leading-vc h4,
@@ -119,10 +120,16 @@ header p {
     font-size: 1em;
 }
 
-/* ALL Audio Players - Consistent Size */
+/* Audio Player */
+.audio-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 audio {
     width: 100%;
-    max-width: 150px; /* Medium, consistent size */
+    max-width: 200px;
     margin-bottom: 5px;
     border-radius: 20px;
     overflow: hidden;
