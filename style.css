@@ -85,11 +85,14 @@ header p {
 .vc-approaches {
     flex: 2; /* Make the column wider */
     display: flex;
-    flex-direction: column; /* Stack Leading and Proposed */
+    /*flex-direction: column;   Stack Leading and Proposed */
 }
 
-.leading-vc,
+.leading-vc{
+     width: 70%;
+}
 .proposed-vc {
+     width: 30%;
     margin-bottom: 10px;
 }
 
