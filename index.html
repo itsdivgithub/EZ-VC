@@ -3,74 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EZ-VC Audio Showcase</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Ensuring CSS file is correctly linked -->
+    <title>Voice Conversion Audio Samples</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header Section -->
     <header>
-        <h1>Welcome to EZ-VC</h1>
-        <p>Easy Multilingual Voice Conversion</p>
+        <h1>GenVC</h1>
+        <p>Zero-shot voice conversion has recently made substantial progress, but many models still depend on external supervised systems to disentangle speaker identity and linguistic content. Furthermore, current methods often use parallel conversion, where the converted speech inherits the source utterance's temporal structure, restricting speaker similarity and privacy. To overcome these limitations, we introduce GenVC, a generative zero-shot voice conversion model. GenVC learns to disentangle linguistic content and speaker style in a self-supervised manner, eliminating the need for external models and enabling efficient training on large, unlabeled datasets. Experimental results show that GenVC achieves state-of-the-art speaker similarity while maintaining naturalness competitive with leading approaches. Its autoregressive generation also allows the converted speech to deviate from the source utterance's temporal structure. This feature makes GenVC highly effective for voice anonymization, as it minimizes the preservation of source prosody and speaker characteristics, enhancing privacy protection.</p>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
+    <section class="audio-samples">
+        <h2>Unseen speaker voice conversion</h2>
 
-        <!-- Loop to create 10 rows -->
-        <div class="audio-container">
-            <!-- Row 1 (Repeat similar structure for more rows) -->
-            <div class="audio-row">
-                <div class="column">
-                    <h3>Source Utterance</h3>
-                    <audio controls>
-                        <source src="audio/source1.wav" type="audio/wav">
-                    </audio>
-                </div>
-
-                <div class="column">
-                    <h3>Target Prompt</h3>
-                    <audio controls>
-                        <source src="audio/target1.wav" type="audio/wav">
-                    </audio>
-                </div>
-
-                <div class="column">
-                    <h3>Leading VC Approaches</h3>
-                    <p>Seed VC</p>
-                    <audio controls>
-                        <source src="audio/seed1.wav" type="audio/wav">
-                    </audio>
-
-                    <p>KNN VC</p>
-                    <audio controls>
-                        <source src="audio/knn1.wav" type="audio/wav">
-                    </audio>
-
-                    <p>Vec2Wav2 VC</p>
-                    <audio controls>
-                        <source src="audio/vec2wav1.wav" type="audio/wav">
-                    </audio>
-
-                    <p>Diff-Hier VC</p>
-                    <audio controls>
-                        <source src="audio/diffhier1.wav" type="audio/wav">
-                    </audio>
-                </div>
-
-                <div class="column">
-                    <h3>EZ-VC</h3>
-                    <audio controls>
-                        <source src="audio/ezvc1.wav" type="audio/wav">
-                    </audio>
-                </div>
+        <!-- Row Template (Repeat this for 10 rows) -->
+        <div class="audio-row">
+            <div class="audio-column">
+                <h3>Source Utterance</h3>
+                <audio controls src="path/to/source1.wav"></audio>
             </div>
-
-            <!-- Duplicate the above "audio-row" div 9 more times to make 10 rows -->
-            
+            <div class="audio-column">
+                <h3>Target Prompt</h3>
+                <audio controls src="path/to/target1.wav"></audio>
+            </div>
+            <div class="audio-column leading-vc">
+                <h3>Leading VC Approaches</h3>
+                <h4>Seed VC</h4>
+                <audio controls src="path/to/seed1.wav"></audio>
+                <h4>KNN VC</h4>
+                <audio controls src="path/to/knn1.wav"></audio>
+                <h4>Vec2Wav2 VC</h4>
+                <audio controls src="path/to/vec2wav2_1.wav"></audio>
+                <h4>Diff-Hier VC</h4>
+                <audio controls src="path/to/diffhier1.wav"></audio>
+            </div>
+            <div class="audio-column ez-vc">
+                <h3>EZ-VC</h3>
+                <audio controls src="path/to/ezvc1.wav"></audio>
+            </div>
         </div>
+         <div class="audio-row">
+            <div class="audio-column">
+                <h3>Source Utterance</h3>
+                <audio controls src="path/to/source2.wav"></audio>
+            </div>
+            <div class="audio-column">
+                <h3>Target Prompt</h3>
+                <audio controls src="path/to/target2.wav"></audio>
+            </div>
+            <div class="audio-column leading-vc">
+                <h3>Leading VC Approaches</h3>
+                <h4>Seed VC</h4>
+                <audio controls src="path/to/seed2.wav"></audio>
+                <h4>KNN VC</h4>
+                <audio controls src="path/to/knn2.wav"></audio>
+                <h4>Vec2Wav2 VC</h4>
+                <audio controls src="path/to/vec2wav2_2.wav"></audio>
+                <h4>Diff-Hier VC</h4>
+                <audio controls src="path/to/diffhier2.wav"></audio>
+            </div>
+            <div class="audio-column ez-vc">
+                <h3>EZ-VC</h3>
+                <audio controls src="path/to/ezvc2.wav"></audio>
+            </div>
+        </div>
+         <div class="audio-row">
+            <div class="audio-column">
+                <h3>Source Utterance</h3>
+                <audio controls src="path/to/source3.wav"></audio>
+            </div>
+            <div class="audio-column">
+                <h3>Target Prompt</h3>
+                <audio controls src="path/to/target3.wav"></audio>
+            </div>
+            <div class="audio-column leading-vc">
+                <h3>Leading VC Approaches</h3>
+                <h4>Seed VC</h4>
+                <audio controls src="path/to/seed3.wav"></audio>
+                <h4>KNN VC</h4>
+                <audio controls src="path/to/knn3.wav"></audio>
+                <h4>Vec2Wav2 VC</h4>
+                <audio controls src="path/to/vec2wav2_3.wav"></audio>
+                <h4>Diff-Hier VC</h4>
+                <audio controls src="path/to/diffhier3.wav"></audio>
+            </div>
+            <div class="audio-column ez-vc">
+                <h3>EZ-VC</h3>
+                <audio controls src="path/to/ezvc3.wav"></audio>
+            </div>
+        </div>
+         <div class="audio-row">
+            <div class="audio-column">
+                <h3>Source Utterance</h3>
+                <audio controls src="path/to/source4.wav"></audio>
+            </div>
+            <div class="audio-column">
+                <h3>Target Prompt</h3>
+                <audio controls src="path/to/target4.wav"></audio>
+            </div>
+            <div class="audio-column leading-vc">
+                <h3>Leading VC Approaches</h3>
+                <h4>Seed VC</h4>
+                <audio controls src="path/to/seed4.wav"></audio>
+                <h4>KNN VC</h4>
+                <audio controls src="path/to/knn4.wav"></audio>
+                <h4>Vec2Wav2 VC</h4>
+                <audio controls src="path/to/vec2wav2_4.wav"></audio>
+                <h4>Diff-Hier VC</h4>
+                <audio controls src="path/to/diffhier4.wav"></audio>
+            </div>
+            <div class="audio-column ez-vc">
+                <h3>EZ-VC</h3>
+                <audio controls src="path/to/ezvc4.wav"></audio>
+            </div>
+        </div>
+         <div class="audio-row">
+            <div class="audio-column">
+                <h3>Source Utterance</h3>
+                <audio controls src="path/to/source5.wav"></audio>
+            </div>
+            <div class="audio-column">
+                <h3>Target Prompt</h3>
+                <audio controls src="path/to/target5.wav"></audio>
+            </div>
+            <div class="audio-column leading-vc">
+                <h3>Leading VC Approaches</h3>
+                <h4>Seed VC</h4>
+                <audio controls src="path/to/seed5.wav"></audio>
+                <h4>KNN VC</h4>
+                <audio controls src="path/to/knn5.wav"></audio>
+                <h4>Vec2Wav2 VC</h4>
+                <audio controls src="path/to/vec2wav2_5.wav"></audio>
+                <h4>Diff-Hier VC</h4>
+                <audio controls src="path/to/diffhier5.wav"></audio>
+            </div>
+            <div class="audio-column ez-vc">
+                <h3>EZ-VC</h3>
+                <audio controls src="path/to/ezvc5.wav"></audio>
+            </div>
+        </div>
+         <div class="audio-row">
+            <div class="audio-column">
+                <h3>Source Utterance</h3>
+                <audio controls src="path/to/source6.wav"></audio>
+            </div>
+            <div class="audio-column">
+                <h3>Target Prompt</h3>
+                <audio controls src="path/to/target6.wav"></audio>
+            </div>
+            <div class="audio-column leading-vc">
+                <h3>Leading VC Approaches</h3>
+                <h4>Seed VC</h4>
+                <audio controls src="path/to/seed6.wav"></audio>
+                <h4>KNN VC</h4>
+                <audio controls src="path/to/knn6.wav"></audio>
+                <h4>Vec2Wav2 VC</h4>
+                <audio controls src="path/to/vec2wav2_6.wav"></audio>
+                <h4>Diff-Hier VC</h4>
+                <audio controls src="path/to/diffhier6.wav"></audio>
+            </div>
+            <div class="audio-column ez-vc">
+                <h3>EZ-VC</h3>
+                <audio controls src="path/to/ezvc6.wav"></audio>
+            </div>
+        </div>
+         <div class="audio-row">
+            <div class="audio-column">
+                <h3>Source Utterance</h3>
+                <audio controls src="path/to/source7.wav"></audio>
+            </div>
+            <div class="audio-column">
+                <h3>Target Prompt</h3>
+                <audio controls src="path/to/target7.wav"></audio>
+            </div>
+            <div class="audio-column leading-vc">
+                <h3>Leading VC Approaches</h3>
+                <h4>Seed VC</h4>
+                <audio controls src="path/to/seed7.wav"></audio>
+                <h4>KNN VC</h4>
+                <audio controls src="path/to/knn7.wav"></audio>
+                <h4>Vec2Wav2 VC</h4>
+                <audio controls src="path/to/vec2wav2_7.wav"></audio>
+                <h4>Diff-Hier VC</h4>
+                <audio controls src="path/to/diffhier7.wav"></audio>
+            </div>
+            <div class="audio-column ez-vc">
+                <h3>EZ-VC</h3>
+                <audio controls src="path/to/ezvc7.wav"></audio>
+            </div>
+        </div>
+         <div class="audio-row">
+            <div class="audio-column">
+                <h3>Source Utterance</h3>
+                <audio controls src="path/to/source8.wav"></audio>
+            </div>
+            <div class="audio-column">
+                <h3>Target Prompt</h3>
+                <audio controls src="path/to/target8.wav"></audio>
+            </div>
+            <div class="audio-column leading-vc">
+                <h3>Leading VC Approaches</h3>
+                <h4>Seed VC</h4>
+                <audio controls src="path/to/seed8.wav"></audio>
+                <h4>KNN VC</h4>
+                <audio controls src="path/to/knn8.wav"></audio>
+                <h4>Vec2Wav2 VC</h4>
+                <audio controls src="path/to/vec2wav2_8.wav"></audio>
+                <h4>Diff-Hier VC</h4>
+                <audio controls src="path/to/diffhier8.wav"></audio>
+            </div>
+            <div class="audio-column ez-vc">
+                <h3>EZ-VC</h3>
+                <audio controls src="path/to/ezvc8.wav"></audio>
+            </div>
+        </div>
+         <div class="audio-row">
+            <div class="audio-column">
+                <h3>Source Utterance</h3>
+                <audio controls src="path/to/source9.wav"></audio>
+            </div>
+            <div class="audio-column">
+                <h3>Target Prompt</h3>
+                <audio controls src="path/to/target9.wav"></audio>
+            </div>
+            <div class="audio-column leading-vc">
+                <h3>Leading VC Approaches</h3>
+                <h4>Seed VC</h4>
+                <audio controls src="path/to/seed9.wav"></audio>
+                <h4>KNN VC</h4>
+                <audio controls src="path/to/knn9.wav"></audio>
+                <h4>Vec2Wav2 VC</h4>
+                <audio controls src="path/to/vec2wav2_9.wav"></audio>
+                <h4>Diff-Hier VC</h4>
+                <audio controls src="path/to/diffhier9.wav"></audio>
+            </div>
+            <div class="audio-column ez-vc">
+                <h3>EZ-VC</h3>
+                <audio controls src="path/to/ezvc9.wav"></audio>
+            </div>
+        </div>
+         <div class="audio-row">
+            <div class="audio-column">
+                <h3>Source Utterance</h3>
+                <audio controls src="path/to/source10.wav"></audio>
+            </div>
+            <div class="audio-column">
+                <h3>Target Prompt</h3>
+                <audio controls src="path/to/target10.wav"></audio>
+            </div>
+            <div class="audio-column leading-vc">
+                <h3>Leading VC Approaches</h3>
+                <h4>Seed VC</h4>
+                <audio controls src="path/to/seed10.wav"></audio>
+                <h4>KNN VC</h4>
+                <audio controls src="path/to/knn10.wav"></audio>
+                <h4>Vec2Wav2 VC</h4>
+                <audio controls src="path/to/vec2wav2_10.wav"></audio>
+                <h4>Diff-Hier VC</h4>
+                <audio controls src="path/to/diffhier10.wav"></audio>
+            </div>
+            <div class="audio-column ez-vc">
+                <h3>EZ-VC</h3>
+                <audio controls src="path/to/ezvc10.wav"></audio>
+            </div>
+        </div>
+        <!-- End Row Template -->
 
-    </div>
+    </section>
 
+    <script src="script.js"></script>
 </body>
 </html>
