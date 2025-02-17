@@ -40,14 +40,14 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap;
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
 }
 
 /* Each Column */
 .column {
-    flex: 1;  /* Ensures equal width */
+    flex: 1;  
     min-width: 250px;
     padding: 10px;
     text-align: center;
@@ -63,22 +63,22 @@ audio {
 /* Mobile & Tablet Responsiveness */
 @media (max-width: 992px) {
     .audio-row {
-        flex-wrap: wrap; /* Allow columns to wrap */
+        flex-wrap: wrap;
     }
 
     .column {
-        flex: 50%;  /* Two columns per row */
+        flex: 50%;  
         text-align: center;
     }
 }
 
 @media (max-width: 600px) {
     .audio-row {
-        flex-direction: column; /* Stack on smaller screens */
+        flex-direction: column;
     }
 
     .column {
-        flex: 100%; /* Full width per row */
+        flex: 100%;
         text-align: center;
     }
 }
