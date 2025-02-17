@@ -2,12 +2,12 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8; /* Light gray-blue */
+    background-color: #f0f4f8;
     color: #333;
     line-height: 1.6;
 }
 
-/* General layout improvements */
+/* General Layout */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -15,9 +15,9 @@ body {
     padding: 20px;
 }
 
-/* Header Styles */
+/* Header */
 header {
-    background-color: #2980b9; /* Slightly darker blue */
+    background-color: #2980b9;
     color: #fff;
     text-align: center;
     padding: 30px 0;
@@ -35,7 +35,7 @@ header p {
     font-style: italic;
 }
 
-/* Introduction Section */
+/* Introduction */
 .introduction {
     background-color: #fff;
     padding: 20px;
@@ -54,7 +54,7 @@ header p {
     color: #555;
 }
 
-/* Audio Samples Section */
+/* Audio Samples */
 .audio-samples {
     padding: 20px;
 }
@@ -64,6 +64,7 @@ header p {
     margin-bottom: 20px;
 }
 
+/* Audio Row */
 .audio-row {
     display: flex;
     flex-wrap: wrap;
@@ -75,35 +76,34 @@ header p {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+/* Audio Column */
 .audio-column {
     flex: 1;
     padding: 10px;
     min-width: 200px;
 }
 
-/* VC Approaches Column */
-.vc-approaches {
-    flex: 2; /* Make the column wider */
-    display: flex;
-    /*flex-direction: column;   Stack Leading and Proposed */
-}
-
-.leading-vc{
-     width: 70%;
-      padding-right: 10px; /* Add padding between leading and proposed */
-}
-.proposed-vc {
-     width: 30%;
-    margin-bottom: 10px;
-    /*margin-left: 10px;  Add margin to create space */
-        padding-left: 10px; /* Add padding between leading and proposed */
-}
-
-.leading-vc h3,
-.proposed-vc h3 {
+.audio-column h3 {
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     color: #2980b9;
+    font-size: 1.2em;
+}
+
+/* VC Approaches */
+.vc-approaches {
+    flex: 2;
+    display: flex;
+}
+
+.leading-vc {
+    width: 70%;
+    padding-right: 10px;
+}
+
+.proposed-vc {
+    width: 30%;
+    padding-left: 10px;
 }
 
 .leading-vc h4,
@@ -111,44 +111,45 @@ header p {
     margin-top: 5px;
     margin-bottom: 5px;
     font-weight: normal;
-     width: 100%; /* Reduce width of heading */
-          font-size: 0.9em; /* Reduce font size of heading */
+    font-size: 1em;
 }
 
+/* Audio Player */
 .leading-vc audio,
 .proposed-vc audio {
-    width: 100%; /* Reduce width of audio player */
-        max-width: 200px; /* Limit the maximum width */
-}
-
-audio {
     width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px; /* Add spacing below audio player */
 }
 
-/* Basic styling for the audio players */
+/* Basic Audio Player Styling */
 audio::-webkit-media-controls-enclosure {
-    background-color: #eee;
+    background-color: #f0f0f0;
     border-radius: 5px;
+    padding: 5px;
 }
 
-/* Responsive adjustments */
+audio::-webkit-media-controls-panel {
+    background-color: #f0f0f0;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     .audio-row {
         flex-direction: column;
     }
+
     .audio-column {
         min-width: auto;
     }
 
-    /* Stack VC approaches on smaller screens */
     .vc-approaches {
         flex-direction: column;
-                 padding: 0; /* Remove padding on smaller screens */
     }
+
     .leading-vc,
     .proposed-vc {
-        width: 100%; /* Full width on smaller screens */
-        padding: 0; /* Remove padding on smaller screens */
-        margin: 0; /* Remove margin on smaller screens */
+        width: 100%;
+        padding: 0;
     }
 }
