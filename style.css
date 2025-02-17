@@ -1,24 +1,67 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
+    line-height: 1.6;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
+/* General layout improvements */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #3498db; /* A modern blue */
+    color: #fff;
     text-align: center;
+    padding: 30px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
+header p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Introduction Section */
+.introduction {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.introduction h2 {
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.introduction p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Audio Samples Section */
 .audio-samples {
     padding: 20px;
+}
+
+.audio-samples h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .audio-row {
@@ -26,14 +69,16 @@ header h1 {
     flex-wrap: wrap;
     margin-bottom: 20px;
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 15px;
     background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .audio-column {
     flex: 1;
     padding: 10px;
-    min-width: 200px; /* Adjust as needed */
+    min-width: 200px;
 }
 
 .leading-vc {
@@ -43,6 +88,13 @@ header h1 {
 .audio-column h3 {
     margin-top: 0;
     margin-bottom: 10px;
+    color: #3498db;
+}
+
+.audio-column h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: normal;
 }
 
 audio {
